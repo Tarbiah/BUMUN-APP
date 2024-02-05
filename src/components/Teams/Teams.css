@@ -1,0 +1,742 @@
+.teams
+{
+    height: 120vh;
+    
+}
+.homeoption{
+  color: #fdfdfd;
+}
+.headder {
+    height: 83%; /* Adjust the height of the header */
+    position: relative;
+  }
+  
+  .headder-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  
+
+/* ... Existing styles ... */
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Adjust the text color as needed */
+}
+
+.center-text p {
+  margin: 5px;
+}
+
+/* ... Existing styles ... */
+
+.options {
+  position: absolute;
+  top: 14%;
+  right: 2%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row !important;
+}
+
+.option {
+  margin: 10px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.option:hover {
+  color: #0022ff; /* Change color on hover, adjust as needed */
+}
+
+.team-options {
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-option {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.team-option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.committees-options {
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.committees-option {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition for background-color */
+}
+
+.committees-option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*cssfor teams*/
+/* Teams.css */
+
+/* ... Existing styles ... */
+
+.executive-council {
+    text-align: center;
+    margin-top: 5px;
+    height: 50%;
+  }
+  
+  .section-heading {
+    font-size: 34px;
+    margin-bottom: 20px;
+  
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .section-line {
+    border: 1px solid #0c0202; /* Adjust the color as needed */
+    width: 80%; /* Adjust the width of the line */
+    margin: 20px auto; /* Adjust the margin as needed */
+    margin-bottom: 40px;
+  }
+  
+  /* ... (other existing styles) */
+  
+  .blue-container {
+    width: 100%;
+    height: 90%;
+   
+    /*background-color: rgb(2, 2, 85); /* Navy blue background */
+    background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .container-content {
+    max-width: 900px; /* Adjust the maximum width of the container content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+  }
+  
+  .image-container img {
+    max-width: 500px; /* Make the image responsive within its container */
+    max-height: 400px; /* Adjust as needed */
+     /* Add border-radius for rounded corners */
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box-shadow for a subtle effect */
+    align-items: center;
+   
+  
+    
+  }
+ 
+
+  .text-content {
+    max-width: 60%; /* Adjust the maximum width of the text content */
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+     text-align: justify;
+    display:block;
+   
+    
+  }
+  
+  /* ... Existing styles ... */
+  
+
+
+ /* Media Query for Responsive Design */
+/* Media Query for Responsive Design */
+/* Media Query for Responsive Design */
+/* Media Query for Responsive Design */
+
+
+.spacer {
+  height: 100px;
+  /* Adjust the height based on your preference */
+  margin-bottom: 100px;
+  /* Equal to the height of the footer */
+}
+
+.footeerr-container {
+background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  position:relative;
+  bottom: 0;
+  width: 97.5%;
+  max-height: 50px;
+  margin-top: 1950px;
+ 
+}
+
+.footeerr-container a {
+color:#fdfdfd!important;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footeerr-container p {
+color: #f1f0f4!important;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 100px;
+  margin-top: -20px;
+}
+
+.footeerr-logo {
+  width: 90px;
+  height: 90px;
+  margin-left: 100px;
+ 
+  margin-top: -15px;
+}
+
+@media only screen and (max-width: 576px) {
+  .teams
+  {
+      height: auto;
+      overflow: hidden;
+      
+  }
+  .headder {
+    height: 35%;
+ 
+}
+
+.center-text {
+ position: absolute;
+ text-align: center;
+margin-top: 5px;
+ color: white; /* Adjust the text color as needed */
+}
+
+.center-text p {
+ margin-bottom: 50px !important;
+ display: block;
+ z-index: 1;
+ font-size: auto;
+
+ 
+}
+
+/* ... Existing styles ... */
+
+.options {
+    
+  font-size: 13px;
+  z-index: 2;
+ }
+ 
+ .team-options {
+   position: absolute;
+   top: 85%;
+   left: 13% !important;
+   background-color: white !important;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+ }
+ .committees-options {
+   position: absolute;
+   top: 85%;
+   left: 60%;
+   transform: translateX(-50%);
+   background-color: white !important;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+
+
+  .blue-container {
+    height: auto;
+  }
+
+  .container-content {
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+  }
+
+  .text-content {
+    max-width: 90%;
+  margin-right: 35px;
+    display: block;
+    text-align: justify;
+    
+  }
+
+  .footeerr-container {
+    background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+    padding: 10px;
+    text-align: center;
+
+    
+    position:relative !important;
+  margin: 1px;
+    width: auto;
+    
+    
+   
+  }
+  
+  .footeerr-container a {
+    color:#fdfdfd!important;
+    text-decoration: none;
+    font-size: auto;
+  }
+  
+  .footeerr-container p {
+    color: #f4f1f0!important;
+    text-decoration: none;
+    font-size: auto;
+    margin-left: 10px;
+    
+  }
+  
+  .footeerr-logo {
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+   
+    
+  }
+ 
+
+
+  
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .teams
+  {
+      height: auto;
+      overflow: hidden;
+      
+  }
+  .headder {
+    height: 35%;
+ 
+}
+
+.center-text {
+ position: absolute;
+ text-align: center;
+  margin-top: 3px;
+ color: white; /* Adjust the text color as needed */
+}
+
+.center-text p {
+ margin-bottom: 50px !important;
+ display: block;
+ z-index: 1;
+ font-size: auto;
+
+ 
+}
+
+/* ... Existing styles ... */
+
+.options {
+
+
+ 
+  font-size: auto;
+  z-index: 2;
+ }
+ 
+ .team-options {
+   position: absolute;
+   top: 85%;
+   left: 10% !important;
+   background-color: white !important;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+ }
+ .committees-options {
+   position: absolute;
+   top: 85%;
+   left: 60%;
+   transform: translateX(-50%);
+   background-color: white !important;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+
+
+  .blue-container {
+    height: auto;
+  }
+
+  .container-content {
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+  }
+
+  .text-content {
+    max-width: 90%;
+  margin-right: 35px;
+    display: block;
+    text-align: justify;
+    
+  }
+
+  .footeerr-container {
+    background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+    padding: 10px;
+    text-align: center;
+    margin: 1px;
+    
+    position:relative !important;
+  
+    width: auto;
+    
+    
+   
+  }
+  
+  .footeerr-container a {
+    color:#fdfdfd!important;
+    text-decoration: none;
+    font-size: auto;
+  }
+  
+  .footeerr-container p {
+    color: #f4f1f0!important;
+    text-decoration: none;
+    font-size: auto;
+    margin-left: 10px;
+    
+  }
+  
+  .footeerr-logo {
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+   
+    
+  }
+ 
+
+
+  
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .teams
+  {
+      height: auto;
+      overflow: hidden;
+      
+  }
+  .headder {
+    height: 35%;
+ 
+}
+
+.center-text {
+ position: absolute;
+ text-align: center;
+  margin-top: 3px;
+ color: white; /* Adjust the text color as needed */
+}
+
+.center-text p {
+ margin-bottom: 50px !important;
+ display: block;
+ z-index: 1;
+ font-size: auto;
+
+ 
+}
+
+/* ... Existing styles ... */
+
+.options {
+
+
+ 
+  font-size: auto;
+  z-index: 2;
+ }
+ 
+ .team-options {
+   position: absolute;
+   top: 85%;
+   left: 10% !important;
+   background-color: white !important;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+ }
+ .committees-options {
+   position: absolute;
+   top: 85%;
+   left: 60%;
+   transform: translateX(-50%);
+   background-color: white !important;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+
+
+  .blue-container {
+    height: auto;
+  }
+
+  .container-content {
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+  }
+
+  .text-content {
+    max-width: 90%;
+  margin-right: 35px;
+    display: block;
+    text-align: justify;
+    font-size: auto !important;
+    
+  }
+
+  .footeerr-container {
+    background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+    padding: 10px;
+    text-align: center;
+
+    margin: 1px;
+    position:relative !important;
+  
+    width: auto;
+    
+    
+   
+  }
+  
+  .footeerr-container a {
+    color:#fdfdfd!important;
+    text-decoration: none;
+    font-size: auto;
+  }
+  
+  .footeerr-container p {
+    color: #f4f1f0!important;
+    text-decoration: none;
+    font-size: auto;
+    margin-left: 10px;
+    
+  }
+  
+  .footeerr-logo {
+    width: auto !important;
+    height: 75px;
+    margin-left: 10px;
+   
+    
+  }
+ 
+
+
+  
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .teams
+  {
+      height: auto;
+      overflow: hidden;
+      
+  }
+  .headder {
+    height: 35%;
+ 
+}
+
+.center-text {
+ position: absolute;
+ text-align: center;
+  margin-top: 3px;
+ color: white; /* Adjust the text color as needed */
+}
+
+.center-text p {
+ margin-bottom: 50px !important;
+ display: block;
+ z-index: 1;
+ font-size: auto;
+
+ 
+}
+
+/* ... Existing styles ... */
+
+.options {
+
+
+ 
+  font-size: auto;
+  z-index: 2;
+ }
+ 
+ .team-options {
+   position: absolute;
+   top: 85%;
+   left: 10% !important;
+   background-color: white !important;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+ }
+ .committees-options {
+   position: absolute;
+   top: 85%;
+   left: 60%;
+   transform: translateX(-50%);
+   background-color: white !important;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+
+
+  .blue-container {
+    height: auto;
+  }
+
+  .container-content {
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+  }
+
+  .text-content {
+    max-width: 90%;
+  margin-right: 35px;
+    display: block;
+    text-align: justify;
+    font-size: auto !important;
+    
+  }
+
+  .footeerr-container {
+    background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+    padding: 10px;
+    text-align: center;
+
+    margin: 1px;
+    position:relative !important;
+  
+    width: auto;
+    
+    
+   
+  }
+  
+  .footeerr-container a {
+    color:#fdfdfd!important;
+    text-decoration: none;
+    font-size: auto;
+  }
+  
+  .footeerr-container p {
+    color: #f4f1f0!important;
+    text-decoration: none;
+    font-size: auto;
+    margin-left: 10px;
+    
+  }
+  
+  .footeerr-logo {
+    width: auto !important;
+    height: 75px;
+    margin-left: 10px;
+   
+    
+  }
+ 
+
+
+  
+}

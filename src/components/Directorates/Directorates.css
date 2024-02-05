@@ -1,0 +1,699 @@
+.directorates
+{
+    height: 120vh;
+}
+.hheader {
+    height: 83%; /* Adjust the height of the header */
+    position: relative;
+  }
+  
+  .hheader-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  
+
+/* ... Existing styles ... */
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Adjust the text color as needed */
+}
+
+.center-text p {
+  margin: 5px;
+}
+
+/* ... Existing styles ... */
+
+.options {
+  position: absolute;
+  top: 14%;
+  right: 2%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+}
+
+.option {
+  margin: 10px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.option:hover {
+  color: #0022ff; /* Change color on hover, adjust as needed */
+}
+
+.team-options {
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-option {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.team-option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Responsive Design */
+
+
+
+.committees-options {
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.committees-option {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition for background-color */
+}
+
+.committees-option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*cssfor teams*/
+/* Teams.css */
+
+/* ... Existing styles ... */
+
+/* Directorates.css */
+
+.directorates-heading-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.directorates-heading {
+  font-size: 24px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.line-container {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.line {
+  width: 80%;
+  border: 1px solid #000;
+}
+
+.sub-containers {
+  display: flex;
+  flex-wrap: wrap; /* Allow containers to wrap to the next line */
+  justify-content: center;
+  gap: 50px; 
+  margin: 20px 0; /* Adjust top and bottom margin */
+}
+
+.sub-container {
+  width: 30%; /* Adjust the width as needed */
+  border: 1px solid #000;
+  padding: 10px;
+  
+}
+
+.sub-container h3 {
+  text-align: center;
+}
+
+/* Directorates.css */
+
+/* ... (existing styles) */
+
+/* Directorates.css */
+
+/* ... (existing styles) */
+
+.images-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.image-container {
+  max-width: 48%; /* Adjust the width as needed */
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-info {
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* ... (rest of the existing styles) */
+
+/* Additional CSS for new sub-containers with new class names */
+.sub-containers-new {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 20px 0;
+}
+
+.sub-container-new {
+  width: 30%;
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.image-container-new {
+  max-width: 48%;
+  border-radius: 5px;
+ 
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.imagee {
+  max-width: 100%;
+  max-height: 100%;
+  
+  margin-left:300px; /* Center the image within the container */
+}
+.spacer {
+    height: 100px;
+    /* Adjust the height based on your preference */
+    margin-bottom: 100px;
+    /* Equal to the height of the footer */
+}
+
+.footerr-container {
+  background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    position:relative;
+    bottom: 0;
+    width: 97.5%;
+    max-height: 50px;
+    margin-top: 169px;
+   
+}
+
+.footerr-container a {
+  color:#fdfdfd!important;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footerr-container p {
+  color: #f1f0f4!important;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 100px;
+    margin-top: -20px;
+}
+
+.footerr-logo {
+    width: 90px;
+    height: 90px;
+    margin-left: 100px;
+   
+    margin-top: -15px;
+}
+/* ... Existing styles ... */
+@media only screen and (max-width: 576px) {
+  .directorates
+  {
+     height: auto;
+    overflow: hidden;
+      
+  }
+  .hheader {
+    height: 35%;
+ 
+}
+.image-info {
+  text-align: center;
+  margin-top: 5px;
+  font-size: auto;
+}
+
+
+
+.sub-container {
+  width: 80%; /* Adjust the width as needed */
+
+  padding: 10px;
+  
+}
+
+
+
+.sub-containers-new {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 20px 0;
+}
+.sub-container-new h3{
+ margin-left: 20px;
+}
+.sub-container-new {
+  width: 50%;
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.image-container-new {
+  max-width: 48%;
+  border-radius: 5px;
+ 
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.imagee {
+  max-width: 100%;
+  max-height: 100%;
+  
+  margin-left:130px; /* Center the image within the container */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footerr-container {
+  background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+  padding: 10px;
+  text-align: center;
+
+  
+  position:relative !important;
+
+  width: auto;
+  
+  
+ 
+}
+
+.footerr-container a {
+  color:#fdfdfd!important;
+  text-decoration: none;
+  font-size: auto;
+}
+
+.footerr-container p {
+  color: #f7f4f3 !important;
+  text-decoration: none;
+  font-size: auto;
+  margin-left: 10px;
+  
+}
+
+.footerr-logo {
+  width: 75px;
+  height: 75px;
+  margin-left: 10px;
+ 
+  
+}
+    
+}
+ 
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .directorates
+  {
+     height: auto;
+    overflow: hidden;
+      
+  }
+  .hheader {
+    height: 35%;
+ 
+}
+.image-info {
+  text-align: center;
+  margin-top: 5px;
+  font-size: auto;
+}
+
+
+
+.sub-container {
+  width: 80%; /* Adjust the width as needed */
+
+  padding: 10px;
+  
+}
+
+
+
+.sub-containers-new {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 20px 0;
+}
+.sub-container-new h3{
+ margin-left: 15px;
+}
+.sub-container-new {
+  width: 50%;
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.image-container-new {
+  max-width: 48%;
+  border-radius: 5px;
+ 
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.imagee {
+  max-width: 100%;
+  max-height: 100%;
+  
+  margin-left:185px; /* Center the image within the container */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footerr-container {
+  background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+  padding: 10px;
+  text-align: center;
+
+  
+  position:relative !important;
+
+  width: auto;
+  
+  
+ 
+}
+
+.footerr-container a {
+  color:#fdfdfd!important;
+  text-decoration: none;
+  font-size: auto;
+}
+
+.footerr-container p {
+  color: #fafafa !important;
+  text-decoration: none;
+  font-size: auto;
+  margin-left: 10px;
+  
+}
+
+.footerr-logo {
+  width: 75px;
+  height: 75px;
+  margin-left: 39px !important;
+ 
+  
+}
+    
+}
+ 
+  
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .directorates
+  {
+     height: auto;
+    overflow: hidden;
+      
+  }
+  .hheader {
+    height: 35%;
+ 
+}
+.image-info {
+  text-align: center;
+  margin-top: 5px;
+  font-size: auto;
+}
+
+
+
+.sub-container {
+  width: 80%; /* Adjust the width as needed */
+
+  padding: 10px;
+  
+}
+
+
+
+.sub-containers-new {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 20px 0;
+}
+.sub-container-new h3{
+ margin-left: 15px;
+}
+.sub-container-new {
+  width: 36.5%;
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.image-container-new {
+  max-width: 50%;
+  border-radius: 5px;
+ 
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.imagee {
+  max-width: 100%;
+  max-height: 100%;
+  
+  margin-left:185px; /* Center the image within the container */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footerr-container {
+  background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+  padding: 10px;
+  text-align: center;
+
+  
+  position:relative !important;
+
+  width: auto;
+  
+  
+ 
+}
+
+.footerr-container a {
+  color:#fdfdfd!important;
+  text-decoration: none;
+  font-size: auto;
+}
+
+.footerr-container p {
+  color: #fafafa !important;
+  text-decoration: none;
+  font-size: auto;
+  margin-left: 10px;
+  
+}
+
+.footerr-logo {
+  width: 75px;
+  height: 75px;
+  margin-left: 39px !important;
+ 
+  
+}
+    
+}
+ 
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .directorates
+  {
+     height: auto;
+    overflow: hidden;
+      
+  }
+  .hheader {
+    height: 35%;
+ 
+}
+.image-info {
+  text-align: center;
+  margin-top: 5px;
+  font-size: auto;
+}
+
+
+
+.sub-container {
+  width: 80%; /* Adjust the width as needed */
+
+  padding: 10px;
+  
+}
+
+
+
+.sub-containers-new {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 20px 0;
+}
+.sub-container-new h3{
+ margin-left: 15px;
+}
+.sub-container-new {
+  width: 36.5%;
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.image-container-new {
+  max-width: 50%;
+  border-radius: 5px;
+ 
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.imagee {
+  max-width: 100%;
+  max-height: 100%;
+  
+  margin-left:185px; /* Center the image within the container */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footerr-container {
+  background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+  padding: 10px;
+  text-align: center;
+
+  
+  position:relative !important;
+
+  width: auto;
+  
+  
+ 
+}
+
+.footerr-container a {
+  color:#fdfdfd!important;
+  text-decoration: none;
+  font-size: auto;
+}
+
+.footerr-container p {
+  color: #fafafa !important;
+  text-decoration: none;
+  font-size: auto;
+  margin-left: 10px;
+  
+}
+
+.footerr-logo {
+  width: 75px;
+  height: 75px;
+  margin-left: 39px !important;
+ 
+  
+}
+    
+}

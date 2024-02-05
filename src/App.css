@@ -1,0 +1,18 @@
+/* App.css */
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  padding-bottom: 700px; /* Adjust the value based on your footer height */
+}
+
+/* Add any other styles as needed */
+
+.footer {
+  margin-top: 10%;
+}

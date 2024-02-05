@@ -1,0 +1,44 @@
+/* Footer.css */
+
+.page-footer {
+    background-color: rgb(2, 2, 85);
+    color: white;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 100px;
+  }
+  
+  .connect-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    
+  }
+  
+  .social-icons {
+
+    align-items: center;
+     /* Push icons to the right */
+  }
+  
+  .icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .address-section {
+    
+    margin-right: 50%;
+
+    
+  }
+  
+  a {
+    color: rgb(246, 245, 249);
+  }
+  
+  /* ... Add more styles as needed */
+  

@@ -1,0 +1,888 @@
+/* Home.css */
+
+.home {
+  height: 150vh;
+ 
+}
+.home-link{
+  color: #fff;
+}
+.reg-link{
+  color: #f1f0f4;
+}
+.team-link{
+  color: #001199;
+}
+
+.teamm-link{
+  color:  #fff;
+}
+body {
+  font-family: 'Times New Roman', Times, serif;
+   /* Reset default padding */
+}
+
+.heaader {
+  position: relative;
+  height: 55%;
+  
+}
+.your-logo-class {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+.heaader-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Black overlay with adjustable opacity */
+}
+
+/* ... Existing styles ... */
+
+.ceenter-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Adjust the text color as needed */
+}
+
+.ceenter-text p {
+  margin: 5px;
+  font-size: larger;
+}
+
+/* ... Existing styles ... */
+
+.opptions {
+  position: absolute;
+  top: 14%;
+  right: 2%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+}
+
+.opption {
+  margin: 10px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.opption:hover {
+  color: #0022ff; /* Change color on hover, adjust as needed */
+}
+
+.teamm-options {
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.teamm-option {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.teamm-option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* ... Existing styles ... */
+
+.ccommittees-options {
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.ccommittees-option {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition for background-color */
+}
+
+.ccommittees-option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ... Existing styles ... */
+
+.register-button {
+  margin-top: 20px; /* Adjust as needed */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2b47fc; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
+  border: 2px solid #fff; /* Add a white border */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.register-button:hover {
+  background-color: #001199; /* Change color on hover, adjust as needed */
+  color: rgb(249, 249, 247); /* Change text color on hover, adjust as needed */
+  border-color: #001199; /* Change border color on hover, adjust as needed */
+}
+
+/* ... Existing styles ... */
+
+.lletter-container {
+  width: 1000px;/*letter ki width agy peechy*/
+  max-height: 1500px;
+  padding: 30px;
+  margin-left: 320px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex; /* Add this line to enable flexbox */
+  
+  /*max-width: 800px;
+  margin-left: 320px;
+  max-height: 1000px; /* Adjust the maximum width of the letter container */
+  /*margin: 20px auto;/* /* Center the letter container horizontally and provide some spacing */
+  /*padding: 30px; /* Add some padding for better readability */
+  /*background-color: rgba(255, 255, 255, 0.7);*/ /* Adjust the background color and opacity */
+}
+
+.lletter {
+  /*justify-items: center;
+  font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+text-align: justify;
+display:block;*/
+
+
+font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+ /* Add this line to make the letter container flexible */
+}
+.imageee-container {
+  margin-right: 5px;
+  width: 30%;
+  height: 200%;
+
+  /* Add other styles for positioning and spacing as needed */
+}
+
+.your-imageee-class {
+  margin-top: 40px;
+  width:250px;
+  height: auto;
+  margin-left: 100px; /*agy peechy image*/
+  border: 4px solid black; /* Add black borders */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+
+
+
+
+.spacer {
+  height: 100px;
+  /* Adjust the height based on your preference */
+  margin-bottom: 100px;
+  /* Equal to the height of the footer */
+}
+
+.ffooter-container {
+  background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  position:relative !important;
+  bottom: 0;
+  width: 97% !important;
+  max-height: 50px;
+  margin-top: 30px;
+ 
+}
+
+.ffooter-container a {
+  color:#fdfdfd!important;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.ffooter-container p {
+  color: #f1f0f4!important;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 100px;
+  margin-top: -20px;
+}
+
+.ffooter-logo {
+  width: 90px;
+  height: 90px;
+  margin-left: 100px;
+ 
+  margin-top: -15px;
+}
+/* ... Existing styles ... */
+
+
+@media only screen and (max-width: 576px) {
+  .home{
+    overflow: hidden;
+  }
+  .heaader {
+   
+    height: 20%;
+    
+  }
+
+  .ceenter-text {
+    position: absolute;
+    text-align: center;
+   margin-top: 25px;
+    color: white; /* Adjust the text color as needed */
+  }
+  
+  .ceenter-text p {
+    margin-top: 5px;
+    display: block;
+    z-index: 1;
+    font-size: 10px;
+   
+    
+  }
+  
+  /* ... Existing styles ... */
+  
+  .opptions {
+    
+   font-size: 13px;
+   z-index: 2;
+  }
+  
+  .teamm-options {
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  .ccommittees-options {
+    position: absolute;
+    top: 85%;
+    left: 60%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  /* ... Existing styles ... */
+  
+ 
+  
+  /* ... Existing styles ... */
+  
+  .register-button {
+    margin-top: 5px; /* Adjust as needed */
+    width: auto;
+    
+    
+  }
+  
+ 
+  
+  /* ... Existing styles ... */
+  
+  .lletter-container {
+    width: 350px;/*letter ki width agy peechy*/
+       margin-left: 0px;
+    
+    /*max-width: 800px;
+    margin-left: 320px;
+    max-height: 1000px; /* Adjust the maximum width of the letter container */
+    /*margin: 20px auto;/* /* Center the letter container horizontally and provide some spacing */
+    /*padding: 30px; /* Add some padding for better readability */
+    /*background-color: rgba(255, 255, 255, 0.7);*/ /* Adjust the background color and opacity */
+  }
+  
+  .lletter {
+    /*justify-items: center;
+    font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  display:block;*/
+ 
+  font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+   /* Add this line to make the letter container flexible */
+  }
+  .imageee-container {
+    
+    width: 30%;
+    height: auto;
+  
+    /* Add other styles for positioning and spacing as needed */
+  }
+  
+  .your-imageee-class {
+    margin-top: 50px;
+    width:100px;
+    height: auto;
+    margin-left: 18px; /*agy peechy image*/
+    
+  }
+  
+   
+  .ffooter-container {
+    background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+    padding: 10px;
+    text-align: center;
+
+    
+    position:relative !important;
+  
+    width: auto;
+    
+    
+   
+  }
+  
+  .ffooter-container a {
+    color:#fdfdfd!important;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  
+  .ffooter-container p {
+    color: #f1f0f4!important;
+    text-decoration: none;
+    font-size: 11px;
+    margin-left: 10px;
+    
+  }
+  
+  .ffooter-logo {
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+   
+    
+  }
+  /* ... Existing styles ... */
+  
+  
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .home{
+    overflow: hidden;
+    height: auto;
+  }
+  .heaader {
+   
+    height: 20%;
+    
+  }
+
+  .ceenter-text {
+    position: absolute;
+    text-align: center;
+    margin-top: 25px;
+    color: white; /* Adjust the text color as needed */
+  }
+  
+  .ceenter-text p {
+    margin-top: 5px;
+    display: block;
+    z-index: 1;
+    font-size: auto;
+   
+    
+  }
+  
+  /* ... Existing styles ... */
+  
+  .opptions {
+    
+   font-size: auto;
+   z-index: 2;
+
+  }
+  
+  .teamm-options {
+    position: absolute;
+
+    top: 85%;
+    left: 15%;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  .ccommittees-options {
+    position: absolute;
+    top: 85%;
+    left: 60%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  /* ... Existing styles ... */
+  
+ 
+  
+  /* ... Existing styles ... */
+  
+  .register-button {
+    margin-top: 5px; /* Adjust as needed */
+    width: auto;
+    
+    
+  }
+  
+ 
+  
+  /* ... Existing styles ... */
+  
+  .lletter-container {
+    width: 540px;/*letter ki width agy peechy*/
+       margin-left: 0px;
+    
+    /*max-width: 800px;
+    margin-left: 320px;
+    max-height: 1000px; /* Adjust the maximum width of the letter container */
+    /*margin: 20px auto;/* /* Center the letter container horizontally and provide some spacing */
+    /*padding: 30px; /* Add some padding for better readability */
+    /*background-color: rgba(255, 255, 255, 0.7);*/ /* Adjust the background color and opacity */
+  }
+  
+  .lletter {
+    /*justify-items: center;
+    font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  display:block;*/
+ 
+  font-size: auto;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+   /* Add this line to make the letter container flexible */
+  }
+  .imageee-container {
+    
+    width: 50% !important;
+    height: auto;
+  
+    /* Add other styles for positioning and spacing as needed */
+  }
+  
+  .your-imageee-class {
+    margin-top: 50px;
+    width:100px;
+    height: auto;
+    margin-left: 50px; /*agy peechy image*/
+    
+  }
+  
+   
+  .ffooter-container {
+    background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+    padding: 10px;
+    text-align: center;
+
+    
+    position:relative !important;
+  
+    width: auto;
+    
+    
+   
+  }
+  
+  .ffooter-container a {
+    color:#fdfdfd!important;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  
+  .ffooter-container p {
+    color: #f1f0f4!important;
+    text-decoration: none;
+    font-size: auto;
+    margin-left: 10px;
+    
+  }
+  
+  .ffooter-logo {
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+   
+    
+  }
+  /* ... Existing styles ... */
+  
+  
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .home{
+    overflow: hidden;
+    height: auto;
+  }
+  .heaader {
+   
+    height: 20%;
+    
+  }
+
+  .ceenter-text {
+    position: absolute;
+    text-align: center;
+    margin-top: 25px;
+    color: white; /* Adjust the text color as needed */
+  }
+  
+  .ceenter-text p {
+    margin-top: 5px;
+    display: block;
+    z-index: 1;
+    font-size: auto;
+   
+    
+  }
+  
+  /* ... Existing styles ... */
+  
+  .opptions {
+    
+   font-size: auto;
+   z-index: 2;
+
+  }
+  
+  .teamm-options {
+    position: absolute;
+
+    top: 85%;
+    left: 15%;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  .ccommittees-options {
+    position: absolute;
+    top: 85%;
+    left: 60%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  /* ... Existing styles ... */
+  
+ 
+  
+  /* ... Existing styles ... */
+  
+  .register-button {
+    margin-top: 10px; /* Adjust as needed */
+    width: auto;
+    
+    
+  }
+  
+ 
+  
+  /* ... Existing styles ... */
+  
+  .lletter-container {
+    width: 700px;/*letter ki width agy peechy*/
+       margin-left: 0px;
+    
+    /*max-width: 800px;
+    margin-left: 320px;
+    max-height: 1000px; /* Adjust the maximum width of the letter container */
+    /*margin: 20px auto;/* /* Center the letter container horizontally and provide some spacing */
+    /*padding: 30px; /* Add some padding for better readability */
+    /*background-color: rgba(255, 255, 255, 0.7);*/ /* Adjust the background color and opacity */
+  }
+  
+  .lletter {
+    /*justify-items: center;
+    font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  display:block;*/
+ 
+  font-size: auto;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+   /* Add this line to make the letter container flexible */
+  }
+  .imageee-container {
+    
+    width: 60% !important;
+    height: auto;
+  
+    /* Add other styles for positioning and spacing as needed */
+  }
+  
+  .your-imageee-class {
+    margin-top: 50px;
+    width:120px;
+    height: auto;
+    margin-left: 50px; /*agy peechy image*/
+    
+  }
+  
+   
+  .ffooter-container {
+    background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+    padding: 10px;
+    text-align: center;
+
+    
+    position:relative !important;
+  
+    width: auto;
+    
+    
+   
+  }
+  
+  .ffooter-container a {
+    color:#fdfdfd!important;
+    text-decoration: none;
+    font-size: auto;
+  }
+  
+  .ffooter-container p {
+    color: #f1f0f4!important;
+    text-decoration: none;
+    font-size: auto;
+    margin-left: 10px;
+    
+  }
+  
+  .ffooter-logo {
+    width: auto;
+    height: 75px;
+    margin-left: 10px;
+   
+    
+  }
+  /* ... Existing styles ... */
+  
+  
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .home{
+    overflow: hidden;
+    height: auto;
+  }
+  .heaader {
+   
+    height: 20%;
+    
+  }
+
+  .ceenter-text {
+    position: absolute;
+    text-align: center;
+    margin-top: 25px;
+    color: white; /* Adjust the text color as needed */
+  }
+  
+  .ceenter-text p {
+    margin-top: 5px;
+    display: block;
+    z-index: 1;
+    font-size: auto;
+   
+    
+  }
+  
+  /* ... Existing styles ... */
+  
+  .opptions {
+    
+   font-size: auto;
+   z-index: 2;
+
+  }
+  
+  .teamm-options {
+    position: absolute;
+
+    top: 85%;
+    left: 15%;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  .ccommittees-options {
+    position: absolute;
+    top: 85%;
+    left: 60%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  /* ... Existing styles ... */
+  
+ 
+  
+  /* ... Existing styles ... */
+  
+  .register-button {
+    margin-top: 10px; /* Adjust as needed */
+    width: auto;
+    height: 50px;
+    font-size: larger !important;
+  }
+  
+ 
+  
+  /* ... Existing styles ... */
+  
+  .lletter-container {
+    width: 800px;/*letter ki width agy peechy*/
+       margin-left: 0px !important;
+    /*yh change kiya hy ismein*/
+    /*max-width: 800px;
+    margin-left: 320px;
+    max-height: 1000px; /* Adjust the maximum width of the letter container */
+    /*margin: 20px auto;/* /* Center the letter container horizontally and provide some spacing */
+    /*padding: 30px; /* Add some padding for better readability */
+    /*background-color: rgba(255, 255, 255, 0.7);*/ /* Adjust the background color and opacity */
+  }
+  
+  .lletter {
+    /*justify-items: center;
+    font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  display:block;*/
+ 
+  font-size: auto;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+   /* Add this line to make the letter container flexible */
+  }
+  .imageee-container {
+    
+    width: 60% !important;
+    height: auto;
+  
+    /* Add other styles for positioning and spacing as needed */
+  }
+  
+  .your-imageee-class {
+    margin-top: 50px;
+    width:120px;
+    height: auto;
+    margin-left: 50px; /*agy peechy image*/
+    
+  }
+  
+   
+  .ffooter-container {
+    background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+    padding: 10px;
+    text-align: center;
+
+    
+    position:relative !important;
+  
+    width: auto;
+    
+    
+   
+  }
+  
+  .ffooter-container a {
+    color:#fdfdfd!important;
+    text-decoration: none;
+    font-size: auto;
+  }
+  
+  .ffooter-container p {
+    color: #f1f0f4!important;
+    text-decoration: none;
+    font-size: auto;
+    margin-left: 10px;
+    
+  }
+  
+  .ffooter-logo {
+    width: auto;
+    height: 75px;
+    margin-left: 10px;
+   
+    
+  }
+  /* ... Existing styles ... */
+  
+  
+}
+
+
+
+
+
+
+
+
