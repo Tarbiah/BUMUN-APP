@@ -256,7 +256,225 @@
     margin-top: -15px;
 }
 /* ... Existing styles ... */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 344px) {
+  .directorates
+  {
+     height: auto;
+    overflow: hidden;
+      
+  }
+  .hheader {
+    height: 35%;
+ 
+}
+.options{
+  font-size: 11.5px;
+}
+.image-info {
+  text-align: center;
+  margin-top: 5px;
+  font-size: auto;
+}
+
+
+
+.sub-container {
+  width: 80%; /* Adjust the width as needed */
+
+  padding: 10px;
+  
+}
+
+
+
+.sub-containers-new {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 20px 0;
+}
+.sub-container-new h3{
+ margin-left: 10px;
+}
+.sub-container-new {
+  width: 50%;
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.image-container-new {
+  max-width: 48%;
+  border-radius: 5px;
+ 
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.imagee {
+  max-width: 100%;
+  max-height: 100%;
+  
+  margin-left:100px; /* Center the image within the container */
+}
+
+
+
+
+
+
+.footerr-container {
+  background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+  padding: 10px;
+  text-align: center;
+
+  
+  position:relative !important;
+
+  width: auto;
+  
+  
+ 
+}
+
+.footerr-container a {
+  color:#fdfdfd!important;
+  text-decoration: none;
+  font-size: auto;
+}
+
+.footerr-container p {
+  color: #f7f4f3 !important;
+  text-decoration: none;
+  font-size: auto;
+  margin-left: 10px;
+  
+}
+
+.footerr-logo {
+  width: 75px;
+  height: 75px;
+  margin-left: 10px;
+ 
+  
+}
+    
+}
+
+@media only screen and (min-width: 345px) and (max-width: 399px) {
+  .directorates
+  {
+     height: auto;
+    overflow: hidden;
+      
+  }
+  .hheader {
+    height: 35%;
+ 
+}
+.image-info {
+  text-align: center;
+  margin-top: 5px;
+  font-size: auto;
+}
+
+
+
+.sub-container {
+  width: 80%; /* Adjust the width as needed */
+
+  padding: 10px;
+  
+}
+
+
+
+.sub-containers-new {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 20px 0;
+}
+.sub-container-new h3{
+ margin-left: 20px;
+}
+.sub-container-new {
+  width: 50%;
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.image-container-new {
+  max-width: 48%;
+  border-radius: 5px;
+ 
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.imagee {
+  max-width: 100%;
+  max-height: 100%;
+  
+  margin-left:100px; /* Center the image within the container */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footerr-container {
+  background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+  padding: 10px;
+  text-align: center;
+
+  
+  position:relative !important;
+
+  width: auto;
+  
+  
+ 
+}
+
+.footerr-container a {
+  color:#fdfdfd!important;
+  text-decoration: none;
+  font-size: auto;
+}
+
+.footerr-container p {
+  color: #f7f4f3 !important;
+  text-decoration: none;
+  font-size: auto;
+  margin-left: 10px;
+  
+}
+
+.footerr-logo {
+  width: 75px;
+  height: 75px;
+  margin-left: 10px;
+ 
+  
+}
+    
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 576px) {
   .directorates
   {
      height: auto;

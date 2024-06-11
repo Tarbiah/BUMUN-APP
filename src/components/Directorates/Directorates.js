@@ -1,10 +1,13 @@
 // Teams.js
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Navbar from '../../Navbar';
 import bahriaImage from '../Images/bahria.jpg';
+import configureScrollReveal from '../../configureScrollReveal';
 import temasbg from '../Images/teambg.jpg';
 import bumunlogo from '../Images/bumunlogo.png';
 import Noor from '../Images/Noor.png';
+import saad from '../Images/Saad.png';
 import Daniyal from '../Images/Danial.png';
 import usman from '../Images/Usman.png';
 import Moiz from '../Images/Moiz.png';
@@ -37,9 +40,13 @@ const Directorates = () => {
     setCommitteesOptionsVisible(!committeesOptionsVisible);
     setTeamOptionsVisible(false); // Close other options when clicking on a new one
   };
+  useEffect(() => {
+    configureScrollReveal();
+  }, []);
 
   return (
     <div className="directorates">
+        <Navbar/>
       <header className="hheader">
         <img
           src={temasbg}
@@ -47,34 +54,7 @@ const Directorates = () => {
           className="hheader-background"
         />
         <div className="overlay"></div>
-        <div className="options">
-          <div className="option"><Link to="/" className="homeoption">Home</Link></div>
-          
-          <div className="option" onClick={toggleTeamOptions}>
-            The Team +
-            {teamOptionsVisible && (
-              <div className="team-options">
-                <div className="team-option"><Link to="/teams" className="team-link">The Executive Council </Link></div>
-                <div className="team-option"><Link to="/directorates" className="team-link">The Directorate</Link></div>
-              
-              </div>
-            )}
-          </div>
-          <div className="option" onClick={toggleCommitteesOptions}>
-            Committees +
-            {committeesOptionsVisible && (
-              <div className="committees-options">
-                <div className="committees-option"><Link to="/unsc" className="team-link">UNSC</Link></div>
-                <div className="committees-option"><Link to="/pna" className="team-link">PNA</Link></div>
-                <div className="committees-option"><Link to="/unhrc" className="team-link">UNHRC</Link></div>
-                <div className="committees-option"><Link to="/unwomen" className="team-link">UNWOMEN</Link></div>
-                <div className="committees-option"><Link to="/criciscell" className="team-link">CRISIS CELL</Link></div>
-                <div className="committees-option"><Link to="/c40" className="team-link">C-40</Link></div>
-              </div>
-            )}
-          </div>
-          <div className="option"><Link to="/info" className="teamm-link">Information</Link></div>
-        </div>
+      
         <div className="center-text">
           <p><h1>THE TEAM</h1></p>
         </div>
@@ -101,7 +81,7 @@ const Directorates = () => {
               <img src={Noor} alt="Image 1" className="image" />
               <div className="image-info">
                 <p>Noor Naseer</p>
-                <p>Contact: noornaseer26m@gmail.com </p>
+                
               </div>
             </div>
 
@@ -151,7 +131,7 @@ const Directorates = () => {
               <img src={sadia} alt="Image 1" className="image" />
               <div className="image-info">
                 <p>Sadia Sagheer </p>
-                <p>Contact: Sadiasagheer38@gmail.com</p>
+                
               </div>
             </div>
 
@@ -172,7 +152,7 @@ const Directorates = () => {
           <div className="images-container">
             {/* Image 3 */}
             <div className="image-container">
-              <img src={kamran} alt="Image 3" className="image" />
+              <img src={saad} alt="Image 3" className="image" />
               <div className="image-info">
                 <p>Saad Kamran</p>
                 <p>Contact: 03215155019</p>
@@ -267,24 +247,24 @@ const Directorates = () => {
     </div>
     <div className="image-info">
       <p>Momna Majeed</p>
-      <p>Contact: momnamajeed8@gmail.com</p>
+     
     </div>
   </div>
       </div>
       {/*--------------------------------------------------------------------------------------------------------------*/}
       <div className="sub-containers-new">
-  {/* Sub-container 3 */}
-  <div className="sub-container-new">
-  <h3>Outreach</h3>
-    <div className="image-container-new">
-      {/* Image 5 */}
-      <img src={hammad} alt="Image 5" className="imagee" />
-    </div>
-    <div className="image-info">
-      <p>Hammad Mahmood khan</p>
-      <p>Contact: 03348638841</p>
-    </div>
-  </div>
+      {/* Sub-container 3 */}
+      <div className="sub-container-new">
+      <h3>Outreach</h3>
+        <div className="image-container-new">
+          {/* Image 5 */}
+          <img src={hammad} alt="Image 5" className="imagee" />
+        </div>
+        <div className="image-info">
+          <p>Hammad Mahmood khan</p>
+          <p>Contact: 03348638841</p>
+        </div>
+      </div>
 
   {/* Sub-container 4 */}
   <div className="sub-container-new">
@@ -295,11 +275,52 @@ const Directorates = () => {
     </div>
     <div className="image-info">
       <p>Muhammad Hanzala</p>
-      <p>Contact: hanzalaanjum0@gmail.com
+      <p>Contact: 03035270137
 </p>
     </div>
   </div>
+
+ { /*lassst*/}
+
+
+
+ 
       </div>
+
+
+
+
+
+
+
+      <div className="sub-containers-new">
+  {/* Sub-container 3 */}
+  <div className="sub-container-new">
+  <h3>IT & Support</h3>
+    <div className="image-container-new">
+      {/* Image 5 */}
+      <img src={kamran} alt="Image 5" className="imagee" />
+    </div>
+    <div className="image-info">
+      <p>Syed Kamran Hussain Shah</p>
+      <p>Contact: 03155123871</p>
+    </div>
+  </div>
+
+
+
+ { /*lassst*/}
+
+
+
+ 
+      </div>
+
+
+
+
+
+
 {/* Footer */}
 
 <div className="footerr-container">

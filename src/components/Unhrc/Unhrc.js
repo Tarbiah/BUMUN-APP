@@ -1,11 +1,12 @@
 
-import React, { useState } from 'react';
-
+import React, { useState, useEffect } from 'react';
+import Navbar from '../../Navbar';
 import { Link } from 'react-router-dom';
 import './Unhrc.css'; // Import the corresponding CSS file
 import unhclogo from '../Images/unhrclogo.png';
 import unhcbg from '../Images/unhrcbd.jpeg';
 import bumunlogo from '../Images/bumunlogo.png';
+import configureScrollReveal from '../../configureScrollReveal';
 const Unhrc = () => {
     const [teamOptionsVisible, setTeamOptionsVisible] = useState(false);
     const [committeesOptionsVisible, setCommitteesOptionsVisible] = useState(false);
@@ -20,9 +21,12 @@ const Unhrc = () => {
       setTeamOptionsVisible(false); // Close other options when clicking on a new one
     };
 
-    
+    useEffect(() => {
+      configureScrollReveal();
+    }, []);
  return (
-    <div className="Unhrc">
+    <div className="unsc">
+        <Navbar/>
       <header className="header">
         <img
           src={unhcbg}
@@ -30,34 +34,7 @@ const Unhrc = () => {
           className="header-background"
         />
         <div className="overlay"></div>
-        <div className="options">
-          <div className="option"><Link to="/" className="homeoption">Home</Link></div>
-          
-          <div className="option" onClick={toggleTeamOptions}>
-            The Team +
-            {teamOptionsVisible && (
-              <div className="team-options">
-                <div className="team-option"><Link to="/teams" className="team-link">The Executive Council </Link></div>
-                <div className="team-option"><Link to="/directorates" className="team-link">The Directorate</Link></div>
-              
-              </div>
-            )}
-          </div>
-          <div className="option" onClick={toggleCommitteesOptions}>
-            Committees +
-            {committeesOptionsVisible && (
-              <div className="committees-options">
-                <div className="committees-option"><Link to="/unsc" className="team-link">UNSC</Link></div>
-                <div className="committees-option"><Link to="/pna" className="team-link">PNA</Link></div>
-                <div className="committees-option"><Link to="/unhrc" className="team-link">UNHRC</Link></div>
-                <div className="committees-option"><Link to="/unwomen" className="team-link">UNWOMEN</Link></div>
-                <div className="committees-option"><Link to="/criciscell" className="team-link">CRISIS CELL</Link></div>
-                <div className="committees-option"><Link to="/c40" className="team-link">C-40</Link></div>
-              </div>
-            )}
-          </div>
-          <div className="option"><Link to="/info" className="teamm-link">Information</Link></div>
-        </div>
+       
         <div className="center-text">
           <p><h1>UNITED NATIONS HUMAN RIGHTS COUNCIL</h1></p>
         </div>

@@ -1,12 +1,13 @@
 // Home.js
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Home.css';
+import Navbar from '../../Navbar';
 import bumunlogo from '../Images/bumunlogo.png';
 import Ahsan from '../Images/Ahsan.png';
 import bahriae8 from '../Images/bahriae8.jpg';
-
-
+import ScrollReveal from 'scrollreveal';
+import configureScrollReveal from '../../configureScrollReveal';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -23,8 +24,30 @@ const Home = () => {
     setTeamOptionsVisible(false); // Close other options when clicking on a new one
   };
 
+ /* const sr = ScrollReveal({
+    origin: 'bottom',
+    distance: '20px',
+    duration: 1000,
+    delay: 200,
+    easing: 'ease',
+    reset: true,
+  });
+  
+  useEffect(() => {
+    sr.reveal('.ceenter-text', {});
+    
+  }, []);*/
+
+
+    useEffect(() => {
+      configureScrollReveal();
+    }, []);
+  
+
+
   return (
     <div className="home">
+      <Navbar/>
       <header className="heaader">
         <img
           src={bahriae8}
@@ -32,41 +55,12 @@ const Home = () => {
           className="heaader-background"
         />
         <div className="overlay"></div>
-        <div className="opptions">
-          
-        <div className="opption"><Link to="/" className="home-link">Home</Link></div>
-          
-          <div className="opption" onClick={toggleTeamOptions}>
-            The Team +
-         
-          {teamOptionsVisible && (
-              <div className="teamm-options">
-                <div className="teamm-option"><Link to="/teams" className="team-link">The Executive Council </Link></div>
-                <div className="teamm-option"><Link to="/directorates" className="team-link">The Directorate</Link></div>
-                
-              </div>
-            )}
-          </div>
-          <div className="opption" onClick={toggleCommitteesOptions}>
-            Committees +
-            {committeesOptionsVisible && (
-              <div className="ccommittees-options">
-                <div className="ccommittees-option"><Link to="/unsc" className="team-link">UNSC</Link></div>
-                <div className="ccommittees-option"><Link to="/pna" className="team-link">PNA</Link></div>
-                <div className="ccommittees-option"><Link to="/unhrc" className="team-link">UNHRC</Link></div>
-                <div className="ccommittees-option"><Link to="/unwomen" className="team-link">UNWOMEN</Link></div>
-                <div className="ccommittees-option"><Link to="/criciscell" className="team-link">CRISIS CELL</Link></div>
-                <div className="ccommittees-option"><Link to="/c40" className="team-link">C-40</Link></div>
-              </div>
-            )}
-          </div>
+      
         
-          <div className="opption"><Link to="/info" className="teamm-link">Information</Link></div>
-        </div>
         <div className="ceenter-text">
-          <p><h1>BAHRIA</h1></p>
+          <p><h1>BAHRIA UNIVERSITY</h1></p>
           <p><h1>Model United Nations</h1></p>
-          <p><h3>The annual session will take place 28th February - 1st March, 2024</h3></p>
+          <p><h3>The annual session will take place on 7th March - 9th March, 2024</h3></p>
           <button className="register-button"><Link to="/info" className="reg-link">Register Now</Link></button>
         </div>
        
@@ -84,7 +78,7 @@ const Home = () => {
 </p>
           <p>Sincerely, <br />Chaudhry Ahsan Munir</p>
           <p>President</p>
-          <p>BAHRIA Model United Nations 2023-24</p>
+          <p>BAHRIA UNIVERSITY Model United Nations 2023-24</p>
         </div>
         
 

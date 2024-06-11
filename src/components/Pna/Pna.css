@@ -23,6 +23,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+ 
   color: white; /* Adjust the text color as needed */
 }
 
@@ -74,22 +75,6 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Media Query for Responsive Design */
-@media only screen and (max-width: 768px) {
-  .options {
-    flex-direction: column; /* Stack options vertically on small screens */
-    align-items: center; /* Center options on small screens */
-  }
-
-  .option {
-    margin: 10px 0; /* Adjust margin for better spacing */
-  }
-
-  .team-options {
-    left: 0; /* Adjust position to the left on small screens */
-    transform: translateX(0);
-  }
-}
 
 
 
@@ -114,8 +99,6 @@
 .committees-option:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
-
-
 
 .socialadditional-content {
     display: flex;
@@ -143,7 +126,6 @@
    font-size: large;
    margin-left: 20px;
 }
-
 
 
 

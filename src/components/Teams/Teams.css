@@ -60,8 +60,9 @@
 .team-options {
   position: absolute;
   top: 100%;
-  left: 30%;
-  background-color: rgba(255, 255, 255, 0.7);
+  left: 15% !important; /* Change from 30% to 15% */
+  background-color: #fff !important; /* Solid white background */
+  border: 2px solid #000 !important; /* Black border */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   z-index: 2;
   display: flex;
@@ -72,21 +73,24 @@
   padding: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
+  border-bottom: 2px solid #000; /* Add black bottom border */
+}
+
+.team-option:last-child {
+  border-bottom: none; /* Remove bottom border from the last option */
 }
 
 .team-option:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-
-
-
 .committees-options {
   position: absolute;
   top: 100%;
-  left: 60%;
+  left: 64% !important;
   transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #fff !important; /* Solid white background */
+  border: 2px solid #000 !important; /* Black border */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   z-index: 2;
   display: flex;
@@ -96,7 +100,12 @@
 .committees-option {
   padding: 10px;
   cursor: pointer;
-  transition: background-color 0.3s; /* Add transition for background-color */
+  transition: background-color 0.3s;
+  border-bottom: 2px solid #000; /* Add black bottom border */
+}
+
+.committees-option:last-child {
+  border-bottom: none; /* Remove bottom border from the last option */
 }
 
 .committees-option:hover {

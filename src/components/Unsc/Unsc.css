@@ -3,7 +3,7 @@
     height: 120vh;
 }
 .header {
-    height: 55%; /* Adjust the height of the header */
+    height: 55% !important; /* Adjust the height of the header */
     position: relative;
   }
   
@@ -173,7 +173,102 @@
    
     margin-top: -15px;
 }
-@media only screen and (max-width: 576px) {
+
+
+
+
+
+
+@media only screen and (max-width: 344px) {
+  .unsc
+  {
+     height: auto;
+    overflow: hidden;
+      
+  }
+  .options{
+    font-size: auto !important;
+  }
+  .center-text p{
+    font-size: 12px !important;
+    margin-top: 50px !important;
+  }
+  .socialadditional-content {
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center items horizontally within the container */
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .sociallogo-container {
+    margin-left: 55px !important; /* Adjust the margin as needed */
+    max-width: 200%;
+}
+
+.sociallogo3 {
+    max-width: 200%; /* Ensure the logo does not exceed its container */
+    height: 300px;
+}
+
+.sociallogo3 {
+    max-width: 200%; /* Ensure the logo does not exceed its container */
+    height: 300px;
+}
+  
+  .sociallogo3 {
+    width: 250px !important;
+    height: 190px !important;
+   margin-right: 70px !important;
+   margin-left: 0px;
+  }
+  
+  .socialtext-content {
+    font-size: auto !important;
+   margin-right: 10px !important;
+  }
+  
+
+  .footerr-container {
+    background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+    padding: 10px;
+    text-align: center;
+
+    
+    position:relative !important;
+  
+    width: auto;
+    
+    
+   
+  }
+  
+  .footerr-container a {
+    color:#fdfdfd!important;
+    text-decoration: none;
+    font-size: auto;
+  }
+  
+  .footerr-container p {
+    color: #f1f0f4!important;
+    text-decoration: none;
+    font-size: auto;
+    margin-left: 10px;
+    
+  }
+  
+  .footerr-logo {
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+   
+    
+  }
+  /* ... Existing styles ... */
+  
+  
+
+}
+@media only screen and (min-width: 345px) and (max-width: 399px) {
   .unsc
   {
      height: auto;
@@ -256,6 +351,95 @@
   
 
 }
+
+/*original*/
+@media only screen and (min-width: 400px)and (max-width: 576px) {
+  .unsc
+  {
+     height: auto;
+    overflow: hidden;
+      
+  }
+
+  .socialadditional-content {
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center items horizontally within the container */
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .sociallogo-container {
+    margin-left: 55px !important; /* Adjust the margin as needed */
+    max-width: 200%;
+}
+
+.sociallogo3 {
+    max-width: 200%; /* Ensure the logo does not exceed its container */
+    height: 300px;
+}
+
+.sociallogo3 {
+    max-width: 200%; /* Ensure the logo does not exceed its container */
+    height: 300px;
+}
+  
+  .sociallogo3 {
+    width: 300px !important;
+    height: 200px;
+   margin-right: 70px !important;
+   margin-left: 0px;
+  }
+  
+  .socialtext-content {
+    font-size: 14px !important;
+   margin-right: 10px !important;
+  }
+  
+
+  .footerr-container {
+    background: linear-gradient(180deg, rgba(0, 31, 64, 0.5) 0%, #001F40 100%) !important;
+    padding: 10px;
+    text-align: center;
+
+    
+    position:relative !important;
+  
+    width: auto;
+    
+    
+   
+  }
+  
+  .footerr-container a {
+    color:#fdfdfd!important;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  
+  .footerr-container p {
+    color: #f1f0f4!important;
+    text-decoration: none;
+    font-size: 11px;
+    margin-left: 10px;
+    
+  }
+  
+  .footerr-logo {
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+   
+    
+  }
+  /* ... Existing styles ... */
+  
+  
+
+}
+
+
+
+/*correct*/
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .unsc
   {

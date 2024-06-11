@@ -1,0 +1,157 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+    padding: 8px;
+    background-color: #faf6f6;
+    color: rgb(8, 0, 0);
+    z-index: 2;
+   
+  }
+  .nav-options ul li a {
+    color: black; /* Set the color to black */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .nav-options ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  .logo {
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+  }
+  
+  .logo img {
+    width: 70px; /* Adjust the width of the logo */
+    height: 70px; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some space between the logo and other content */
+    margin-left: 30px;
+  }
+  
+  .nav-options {
+    display: flex;
+    position: relative; /* Ensure positioning context for sub-options */
+  }
+  
+  .nav-options ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .subtc{
+    border-bottom: 2px solid #000; /* Add black bottom border */
+    width: 150px;
+    align-items: center;
+  }
+  .mainhtci{
+    margin-right: 50px;
+  }
+  .nav-options li {
+   
+    padding: 10px;
+    cursor: pointer;
+    position: relative; /* Ensure positioning context for sub-options */
+   
+    
+  }
+  
+  /* Updated styles for sub-options */
+  .sub-options {
+    position: absolute;
+    top: calc(100% + 5px); /* Adjust as needed */
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #f8f8f9;
+    border: 2px solid #000 !important; /* Black border */
+    padding: 10px;
+    z-index: 1; /* Ensure sub-options appear above main options */
+  }
+  
+  .nav-options li:hover .sub-options {
+    display: flex;
+    
+  }
+  
+  /* Adjust positioning for main options in the slide menu */
+  .nav-options.menu-visible {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav-options.menu-visible ul {
+    margin-left: 0;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar{
+        padding: 5px;
+    }
+    .nav-options {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 60px;
+      right: -250px !important;
+      width: 240px;
+      height: auto;
+      background-color: #f2efef;
+      transition: left 0.3s ease;
+      z-index: 3;
+    }
+  
+    .nav-options.menu-visible {
+      right: 0 !important;
+    }
+  
+    .nav-options ul {
+      list-style: none;
+      padding: 10%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav-options li {
+      margin-bottom: 10px;
+      position: relative; /* Ensure positioning context for sub-options */
+    }
+  
+    .sub-options {
+      top: 100%; /* Adjust back to default */
+      left: 0;
+      margin-left: 0;
+      margin-right: 0;
+      display: none;
+      flex-direction: column;
+      width: 155px;
+    background-color: #f2efef;
+      padding: 10px;
+      z-index: 1; /* Ensure sub-options appear above main options */
+      position: static; /* Change to static positioning */
+      border: none !important; /* Black border */
+    }
+  
+    .logo img {
+        width: 50px; /* Adjust the width of the logo */
+        height: auto !important; /* Maintain aspect ratio */
+        margin-right: 10px; /* Add some space between the logo and other content */
+        margin-left: 10px;
+      }
+    
+  
+    .hamburger-menu {
+      display: block;
+    }
+  }
+  

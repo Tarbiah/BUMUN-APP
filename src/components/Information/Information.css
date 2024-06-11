@@ -3,7 +3,7 @@
     height: 120vh;
 }
 .header {
-    height: 40%; /* Adjust the height of the header */
+    height: auto; /* pna etc iss sy chnage hirhy except unsc */
     position: relative;
   }
 
